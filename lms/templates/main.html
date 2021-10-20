@@ -143,7 +143,7 @@ from pipeline_mako import render_require_js_path_overrides
   % if google_site_verification_id:
     <meta name="google-site-verification" content="${google_site_verification_id}" />
   % endif
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-S7JWW4C52W"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -152,6 +152,7 @@ from pipeline_mako import render_require_js_path_overrides
 
   ganalytics('config', 'G-S7JWW4C52W');
 </script>
+-->
   <meta name="openedx-release-line" content="${RELEASE_LINE}" />
 
 <% ga_acct = static.get_value("GOOGLE_ANALYTICS_ACCOUNT", settings.GOOGLE_ANALYTICS_ACCOUNT) %>
